@@ -11,9 +11,9 @@ ApiBrawl.install = function(Vue, options) {
       "Access-Control-Allow-Origin": "https://developer.brawlstars.com",
       "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept",
       "Access-Control-Allow-Methods": "GET",
-      ':authority': 'api.brawlstars.com',
+      'authority': 'api.brawlstars.com',
       'sec-fetch-mode': 'cors',
-      ':method': 'GET'
+      'method': 'GET'
 
     },
   });
