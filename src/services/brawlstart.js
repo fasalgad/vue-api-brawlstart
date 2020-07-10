@@ -7,10 +7,6 @@ ApiBrawl.install = function(Vue, options) {
     baseURL: process.env.VUE_APP_BASEURL_API_BRAWLSTART,
     headers: {
       Authorization: `Bearer ${process.env.VUE_APP_TOKEN_API_BRAWLSTART}`,
-      "Access-Control-Allow-Origin":
-        process.env.VUE_APP_BASEURL_API_BRAWLSTART_ORIGIN,
-        Origin: process.env.VUE_APP_BASEURL_API_BRAWLSTART_ORIGIN,
-        Referer:process.env.VUE_APP_BASEURL_API_BRAWLSTART_ORIGIN
     },
   });
 };
