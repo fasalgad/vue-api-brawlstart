@@ -7,9 +7,10 @@ ApiBrawl.install = function(Vue, options) {
     baseURL: process.env.VUE_APP_BASEURL_API_BRAWLSTART,
     headers: {
       authorization: `Bearer ${process.env.VUE_APP_TOKEN_API_BRAWLSTART}`,
-      Accept: 'application/json',
-      "Access-Control-Allow-Origin":'*',
-      "Access-Control-Allow-Headers":'GET'
+      Accept: "application/json",
+      "Access-Control-Allow-Origin": "https://developer.brawlstars.com",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept",
+      "access-control-allow-methods": "GET",
     },
   });
 };
