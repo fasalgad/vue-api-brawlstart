@@ -6,7 +6,8 @@ ApiBrawl.install = function(Vue, options) {
   Vue.prototype.$apiBrawl = axios.create({
     baseURL: process.env.VUE_APP_BASEURL_API_BRAWLSTART,
     headers: {
-      Authorization: `Bearer ${process.env.VUE_APP_TOKEN_API_BRAWLSTART}`,
+      authorization: `Bearer ${process.env.VUE_APP_TOKEN_API_BRAWLSTART}`,
+      Accept: 'application/json'
     },
   });
 };
