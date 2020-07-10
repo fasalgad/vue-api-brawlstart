@@ -8,7 +8,8 @@ ApiBrawl.install = function(Vue, options) {
     headers: {
       authorization: `Bearer ${process.env.VUE_APP_TOKEN_API_BRAWLSTART}`,
       Accept: 'application/json',
-      "Access-Control-Allow-Origin":'*'
+      "Access-Control-Allow-Origin":'*',
+      "Access-Control-Allow-Headers":'GET'
     },
   });
 };
